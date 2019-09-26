@@ -10,6 +10,8 @@ import android.widget.Button;
 
     private Button mBtnTextView;
 
+    private Button mBtnButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +23,16 @@ import android.widget.Button;
             public void onClick(View v) {
                 //跳转到TextView演示界面
                 Intent intent = new Intent(MainActivity.this,TextViewActivity.class);
+                startActivity(intent );
+            }
+        });
+
+        mBtnButton = findViewById(R.id.btn_button);
+        mBtnButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                //跳转到Button演示界面
+                Intent intent = new Intent(MainActivity.this,ButtonActivity.class);
                 startActivity(intent );
             }
         });
