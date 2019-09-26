@@ -13,9 +13,11 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />//表示这个MainActivity是启动的Activity
+                <category android:name="android.intent.category.LAUNCHER" />
+                //表示这个MainActivity是启动的Activity
             </intent-filter>
         </activity>
+        <activity android:name=".TextViewActivity"></activity>
     </application>
 
 </manifest>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -71,49 +71,55 @@
         <!--android:layout_alignParentBottom="true"-->
         <!--android:layout_alignParentRight="true"></View>-->
 
-    <View
-        android:id="@+id/view_1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="#000000"></View>
-    <View
-        android:id="@+id/view_2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="#c26e6e"
-        android:layout_below="@id/view_1"></View>
+    <!--<View-->
+        <!--android:id="@+id/view_1"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:background="#000000"></View>-->
+    <!--<View-->
+        <!--android:id="@+id/view_2"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:background="#c26e6e"-->
+        <!--android:layout_below="@id/view_1"></View>-->
 
-    <LinearLayout
-        android:id="@+id/view_3"
+    <!--<LinearLayout-->
+        <!--android:id="@+id/view_3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:layout_below="@id/view_2"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:background="#FF5A7E56"-->
+        <!--android:padding="15dp">-->
+        <!--<View-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#FFA0DFE2"-->
+            <!--android:layout_marginRight="15dp"></View>-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#FFB65EB3"-->
+            <!--android:padding="15dp"-->
+            <!--&gt;-->
+            <!--<View-->
+                <!--android:id="@+id/view_4"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="#FFD27C0C"-->
+                <!--android:layout_marginRight="10dp"></View>-->
+            <!--<View-->
+                <!--android:id="@+id/view_5"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="#FFD27C0C"-->
+                <!--android:layout_toRightOf="@id/view_4"></View>-->
+        <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+    <Button
+        android:id="@+id/btn_textview"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@id/view_2"
-        android:orientation="horizontal"
-        android:background="#FF5A7E56"
-        android:padding="15dp">
-        <View
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:background="#FFA0DFE2"
-            android:layout_marginRight="15dp"></View>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#FFB65EB3"
-            android:padding="15dp"
-            >
-            <View
-                android:id="@+id/view_4"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:background="#FFD27C0C"
-                android:layout_marginRight="10dp"></View>
-            <View
-                android:id="@+id/view_5"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:background="#FFD27C0C"
-                android:layout_toRightOf="@id/view_4"></View>
-        </RelativeLayout>
-    </LinearLayout>
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:text="TextView"/>
+</LinearLayout>
